@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videoCellId" id="gTV-IL-0wX" customClass="ShowTrackOfVideoCollectionViewCell" customModule="FungJaiTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="186" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="186" height="159"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="REJ-iC-B68">
+                        <rect key="frame" x="8" y="8" width="170" height="143"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-play-button-circled-50-2" translatesAutoresizingMaskIntoConstraints="NO" id="o6V-Az-LCp">
+                        <rect key="frame" x="70" y="56.5" width="46.5" height="46.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="o6V-Az-LCp" secondAttribute="height" multiplier="1:1" id="thr-HN-9Nx"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.17977222800254822" green="0.25478187203407288" blue="0.40393733978271484" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="o6V-Az-LCp" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.25" id="6SA-Hr-OpV"/>
+                <constraint firstAttribute="bottom" secondItem="REJ-iC-B68" secondAttribute="bottom" constant="8" id="PPR-Yi-wL1"/>
+                <constraint firstItem="REJ-iC-B68" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="S5p-73-BQA"/>
+                <constraint firstItem="o6V-Az-LCp" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="alv-d6-h97"/>
+                <constraint firstAttribute="trailing" secondItem="REJ-iC-B68" secondAttribute="trailing" constant="8" id="atM-Ya-pbw"/>
+                <constraint firstItem="o6V-Az-LCp" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="l33-ce-IkP"/>
+                <constraint firstItem="REJ-iC-B68" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="tO6-1l-oqw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="186" height="159"/>
+            <connections>
+                <outlet property="videoImage" destination="REJ-iC-B68" id="KoR-Bq-7hJ"/>
+                <outlet property="videoPlayerImage" destination="o6V-Az-LCp" id="lQo-DX-xDq"/>
+            </connections>
+            <point key="canvasLocation" x="93" y="106.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icons8-play-button-circled-50-2" width="50" height="50"/>
+    </resources>
+</document>

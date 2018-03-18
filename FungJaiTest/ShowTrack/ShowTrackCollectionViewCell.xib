@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="trackCellId" id="gTV-IL-0wX" customClass="ShowTrackCollectionViewCell" customModule="FungJaiTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ug-rY-yhc">
+                        <rect key="frame" x="16" y="16" width="136" height="136"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh9-y4-zhE">
+                        <rect key="frame" x="217" y="16" width="170" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Track : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3M-CK-m1W">
+                        <rect key="frame" x="160" y="16" width="57" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.17977222800000001" green="0.25478187200000002" blue="0.40393733980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="8ug-rY-yhc" firstAttribute="width" secondItem="8ug-rY-yhc" secondAttribute="height" multiplier="1:1" id="8cm-yT-EUl"/>
+                <constraint firstItem="sh9-y4-zhE" firstAttribute="leading" secondItem="R3M-CK-m1W" secondAttribute="trailing" id="A74-9E-iXC"/>
+                <constraint firstItem="sh9-y4-zhE" firstAttribute="top" secondItem="R3M-CK-m1W" secondAttribute="top" id="Bk3-lf-up0"/>
+                <constraint firstItem="R3M-CK-m1W" firstAttribute="leading" secondItem="8ug-rY-yhc" secondAttribute="trailing" constant="8" id="Fr8-xk-bdD"/>
+                <constraint firstAttribute="bottom" secondItem="8ug-rY-yhc" secondAttribute="bottom" constant="16" id="fbU-Fr-OSF"/>
+                <constraint firstItem="8ug-rY-yhc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="tD0-NN-9Qp"/>
+                <constraint firstItem="8ug-rY-yhc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="tL3-T1-h0w"/>
+                <constraint firstItem="R3M-CK-m1W" firstAttribute="top" secondItem="8ug-rY-yhc" secondAttribute="top" id="ta4-yD-PYh"/>
+                <constraint firstAttribute="trailing" secondItem="sh9-y4-zhE" secondAttribute="trailing" constant="16" id="xHj-xK-jne"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="403" height="168"/>
+            <connections>
+                <outlet property="trackImageView" destination="8ug-rY-yhc" id="htj-uW-j4N"/>
+                <outlet property="trackNamelbl" destination="sh9-y4-zhE" id="ecH-if-8Mh"/>
+            </connections>
+            <point key="canvasLocation" x="3.5" y="95"/>
+        </collectionViewCell>
+    </objects>
+</document>

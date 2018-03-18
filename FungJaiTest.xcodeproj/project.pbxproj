@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA7E81E5D8F5855A9F608E95 /* Pods_FungJaiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0BD11C8527FEAF6B47A65A /* Pods_FungJaiTest.framework */; };
+		E60F965B205A45B700BC9BD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F965A205A45B700BC9BD2 /* AppDelegate.swift */; };
+		E60F9660205A45B800BC9BD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60F965E205A45B800BC9BD2 /* Main.storyboard */; };
+		E60F9662205A45B800BC9BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60F9661205A45B800BC9BD2 /* Assets.xcassets */; };
+		E60F9665205A45B800BC9BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60F9663205A45B800BC9BD2 /* LaunchScreen.storyboard */; };
+		E60F9670205A45B800BC9BD2 /* FungJaiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F966F205A45B800BC9BD2 /* FungJaiTestTests.swift */; };
+		E60F967B205A45B800BC9BD2 /* FungJaiTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F967A205A45B800BC9BD2 /* FungJaiTestUITests.swift */; };
+		E60F9689205A4E0200BC9BD2 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F9688205A4E0200BC9BD2 /* Constant.swift */; };
+		E60F968B205A4E4800BC9BD2 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60F968A205A4E4800BC9BD2 /* APIManager.swift */; };
+		E6E0299D205BA89A00C93AE7 /* ShowTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0299C205BA89A00C93AE7 /* ShowTrackViewController.swift */; };
+		E6E0299F205BA8DA00C93AE7 /* ShowTrackViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0299E205BA8DA00C93AE7 /* ShowTrackViewControllerExtension.swift */; };
+		E6E029A2205BA8FF00C93AE7 /* ShowTrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E029A0205BA8FF00C93AE7 /* ShowTrackCollectionViewCell.swift */; };
+		E6E029A3205BA8FF00C93AE7 /* ShowTrackCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E029A1205BA8FF00C93AE7 /* ShowTrackCollectionViewCell.xib */; };
+		E6E029A6205BA94300C93AE7 /* ShowTrackOfVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E029A4205BA94300C93AE7 /* ShowTrackOfVideoCollectionViewCell.swift */; };
+		E6E029A7205BA94300C93AE7 /* ShowTrackOfVideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E029A5205BA94300C93AE7 /* ShowTrackOfVideoCollectionViewCell.xib */; };
+		E6F1C3AB205A4F2300DFDD28 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F1C3AC205A4F2300DFDD28 /* Alamofire.framework */; };
+		E6F1C3B1205A509300DFDD28 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F1C3B4205A509300DFDD28 /* MBProgressHUD.framework */; };
+		E6F1C3B2205A509300DFDD28 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F1C3B5205A509300DFDD28 /* Realm.framework */; };
+		E6F1C3B3205A509300DFDD28 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F1C3B6205A509300DFDD28 /* RealmSwift.framework */; };
+		E6F1C3B8205A575C00DFDD28 /* JsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F1C3B7205A575C00DFDD28 /* JsonModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E60F966C205A45B800BC9BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E60F964F205A45B700BC9BD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E60F9656205A45B700BC9BD2;
+			remoteInfo = FungJaiTest;
+		};
+		E60F9677205A45B800BC9BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E60F964F205A45B700BC9BD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E60F9656205A45B700BC9BD2;
+			remoteInfo = FungJaiTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A0BD11C8527FEAF6B47A65A /* Pods_FungJaiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FungJaiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48461846292BDB657CA8C8C6 /* Pods-FungJaiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FungJaiTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FungJaiTest/Pods-FungJaiTest.release.xcconfig"; sourceTree = "<group>"; };
+		5B77E2AA612DD6558B4A8D7D /* Pods-FungJaiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FungJaiTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FungJaiTest/Pods-FungJaiTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E60F9657205A45B700BC9BD2 /* FungJaiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FungJaiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60F965A205A45B700BC9BD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E60F965F205A45B800BC9BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E60F9661205A45B800BC9BD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E60F9664205A45B800BC9BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E60F9666205A45B800BC9BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60F966B205A45B800BC9BD2 /* FungJaiTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FungJaiTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60F966F205A45B800BC9BD2 /* FungJaiTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungJaiTestTests.swift; sourceTree = "<group>"; };
+		E60F9671205A45B800BC9BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60F9676205A45B800BC9BD2 /* FungJaiTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FungJaiTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60F967A205A45B800BC9BD2 /* FungJaiTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungJaiTestUITests.swift; sourceTree = "<group>"; };
+		E60F967C205A45B800BC9BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60F9688205A4E0200BC9BD2 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E60F968A205A4E4800BC9BD2 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		E6E0299C205BA89A00C93AE7 /* ShowTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTrackViewController.swift; sourceTree = "<group>"; };
+		E6E0299E205BA8DA00C93AE7 /* ShowTrackViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTrackViewControllerExtension.swift; sourceTree = "<group>"; };
+		E6E029A0205BA8FF00C93AE7 /* ShowTrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTrackCollectionViewCell.swift; sourceTree = "<group>"; };
+		E6E029A1205BA8FF00C93AE7 /* ShowTrackCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowTrackCollectionViewCell.xib; sourceTree = "<group>"; };
+		E6E029A4205BA94300C93AE7 /* ShowTrackOfVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTrackOfVideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		E6E029A5205BA94300C93AE7 /* ShowTrackOfVideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowTrackOfVideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		E6F1C3AC205A4F2300DFDD28 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F1C3B4205A509300DFDD28 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F1C3B5205A509300DFDD28 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F1C3B6205A509300DFDD28 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F1C3B7205A575C00DFDD28 /* JsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E60F9654205A45B700BC9BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6F1C3B1205A509300DFDD28 /* MBProgressHUD.framework in Frameworks */,
+				E6F1C3B2205A509300DFDD28 /* Realm.framework in Frameworks */,
+				E6F1C3B3205A509300DFDD28 /* RealmSwift.framework in Frameworks */,
+				E6F1C3AB205A4F2300DFDD28 /* Alamofire.framework in Frameworks */,
+				CA7E81E5D8F5855A9F608E95 /* Pods_FungJaiTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60F9668205A45B800BC9BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60F9673205A45B800BC9BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2384428FC4BE8B73F050F75A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B77E2AA612DD6558B4A8D7D /* Pods-FungJaiTest.debug.xcconfig */,
+				48461846292BDB657CA8C8C6 /* Pods-FungJaiTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AFB0E469EB15B8362BC32DB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6F1C3B4205A509300DFDD28 /* MBProgressHUD.framework */,
+				E6F1C3B5205A509300DFDD28 /* Realm.framework */,
+				E6F1C3B6205A509300DFDD28 /* RealmSwift.framework */,
+				E6F1C3AC205A4F2300DFDD28 /* Alamofire.framework */,
+				1A0BD11C8527FEAF6B47A65A /* Pods_FungJaiTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E60F964E205A45B700BC9BD2 = {
+			isa = PBXGroup;
+			children = (
+				E60F9659205A45B700BC9BD2 /* FungJaiTest */,
+				E60F966E205A45B800BC9BD2 /* FungJaiTestTests */,
+				E60F9679205A45B800BC9BD2 /* FungJaiTestUITests */,
+				E60F9658205A45B700BC9BD2 /* Products */,
+				2384428FC4BE8B73F050F75A /* Pods */,
+				AFB0E469EB15B8362BC32DB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E60F9658205A45B700BC9BD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E60F9657205A45B700BC9BD2 /* FungJaiTest.app */,
+				E60F966B205A45B800BC9BD2 /* FungJaiTestTests.xctest */,
+				E60F9676205A45B800BC9BD2 /* FungJaiTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E60F9659205A45B700BC9BD2 /* FungJaiTest */ = {
+			isa = PBXGroup;
+			children = (
+				E60F965A205A45B700BC9BD2 /* AppDelegate.swift */,
+				E60F9688205A4E0200BC9BD2 /* Constant.swift */,
+				E60F968A205A4E4800BC9BD2 /* APIManager.swift */,
+				E6F1C3B7205A575C00DFDD28 /* JsonModel.swift */,
+				E6E029A8205BAB0000C93AE7 /* ShowTrack */,
+				E60F965E205A45B800BC9BD2 /* Main.storyboard */,
+				E60F9661205A45B800BC9BD2 /* Assets.xcassets */,
+				E60F9663205A45B800BC9BD2 /* LaunchScreen.storyboard */,
+				E60F9666205A45B800BC9BD2 /* Info.plist */,
+			);
+			path = FungJaiTest;
+			sourceTree = "<group>";
+		};
+		E60F966E205A45B800BC9BD2 /* FungJaiTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				E60F966F205A45B800BC9BD2 /* FungJaiTestTests.swift */,
+				E60F9671205A45B800BC9BD2 /* Info.plist */,
+			);
+			path = FungJaiTestTests;
+			sourceTree = "<group>";
+		};
+		E60F9679205A45B800BC9BD2 /* FungJaiTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E60F967A205A45B800BC9BD2 /* FungJaiTestUITests.swift */,
+				E60F967C205A45B800BC9BD2 /* Info.plist */,
+			);
+			path = FungJaiTestUITests;
+			sourceTree = "<group>";
+		};
+		E6E029A8205BAB0000C93AE7 /* ShowTrack */ = {
+			isa = PBXGroup;
+			children = (
+				E6E0299C205BA89A00C93AE7 /* ShowTrackViewController.swift */,
+				E6E0299E205BA8DA00C93AE7 /* ShowTrackViewControllerExtension.swift */,
+				E6E029A0205BA8FF00C93AE7 /* ShowTrackCollectionViewCell.swift */,
+				E6E029A1205BA8FF00C93AE7 /* ShowTrackCollectionViewCell.xib */,
+				E6E029A4205BA94300C93AE7 /* ShowTrackOfVideoCollectionViewCell.swift */,
+				E6E029A5205BA94300C93AE7 /* ShowTrackOfVideoCollectionViewCell.xib */,
+			);
+			path = ShowTrack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E60F9656205A45B700BC9BD2 /* FungJaiTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60F967F205A45B800BC9BD2 /* Build configuration list for PBXNativeTarget "FungJaiTest" */;
+			buildPhases = (
+				1B6A65B80237D5F643563159 /* [CP] Check Pods Manifest.lock */,
+				E60F9653205A45B700BC9BD2 /* Sources */,
+				E60F9654205A45B700BC9BD2 /* Frameworks */,
+				E60F9655205A45B700BC9BD2 /* Resources */,
+				EB6EDBF5D12D0654528DB11A /* [CP] Embed Pods Frameworks */,
+				3940D8681C392EB3A9D23F8C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FungJaiTest;
+			productName = FungJaiTest;
+			productReference = E60F9657205A45B700BC9BD2 /* FungJaiTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E60F966A205A45B800BC9BD2 /* FungJaiTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60F9682205A45B800BC9BD2 /* Build configuration list for PBXNativeTarget "FungJaiTestTests" */;
+			buildPhases = (
+				E60F9667205A45B800BC9BD2 /* Sources */,
+				E60F9668205A45B800BC9BD2 /* Frameworks */,
+				E60F9669205A45B800BC9BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E60F966D205A45B800BC9BD2 /* PBXTargetDependency */,
+			);
+			name = FungJaiTestTests;
+			productName = FungJaiTestTests;
+			productReference = E60F966B205A45B800BC9BD2 /* FungJaiTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E60F9675205A45B800BC9BD2 /* FungJaiTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60F9685205A45B800BC9BD2 /* Build configuration list for PBXNativeTarget "FungJaiTestUITests" */;
+			buildPhases = (
+				E60F9672205A45B800BC9BD2 /* Sources */,
+				E60F9673205A45B800BC9BD2 /* Frameworks */,
+				E60F9674205A45B800BC9BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E60F9678205A45B800BC9BD2 /* PBXTargetDependency */,
+			);
+			name = FungJaiTestUITests;
+			productName = FungJaiTestUITests;
+			productReference = E60F9676205A45B800BC9BD2 /* FungJaiTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E60F964F205A45B700BC9BD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Tirawat Boonma";
+				TargetAttributes = {
+					E60F9656205A45B700BC9BD2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E60F966A205A45B800BC9BD2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E60F9656205A45B700BC9BD2;
+					};
+					E60F9675205A45B800BC9BD2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E60F9656205A45B700BC9BD2;
+					};
+				};
+			};
+			buildConfigurationList = E60F9652205A45B700BC9BD2 /* Build configuration list for PBXProject "FungJaiTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E60F964E205A45B700BC9BD2;
+			productRefGroup = E60F9658205A45B700BC9BD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E60F9656205A45B700BC9BD2 /* FungJaiTest */,
+				E60F966A205A45B800BC9BD2 /* FungJaiTestTests */,
+				E60F9675205A45B800BC9BD2 /* FungJaiTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E60F9655205A45B700BC9BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E029A3205BA8FF00C93AE7 /* ShowTrackCollectionViewCell.xib in Resources */,
+				E60F9665205A45B800BC9BD2 /* LaunchScreen.storyboard in Resources */,
+				E60F9662205A45B800BC9BD2 /* Assets.xcassets in Resources */,
+				E60F9660205A45B800BC9BD2 /* Main.storyboard in Resources */,
+				E6E029A7205BA94300C93AE7 /* ShowTrackOfVideoCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60F9669205A45B800BC9BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60F9674205A45B800BC9BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B6A65B80237D5F643563159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FungJaiTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3940D8681C392EB3A9D23F8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FungJaiTest/Pods-FungJaiTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB6EDBF5D12D0654528DB11A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FungJaiTest/Pods-FungJaiTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FungJaiTest/Pods-FungJaiTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E60F9653205A45B700BC9BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E0299F205BA8DA00C93AE7 /* ShowTrackViewControllerExtension.swift in Sources */,
+				E60F968B205A4E4800BC9BD2 /* APIManager.swift in Sources */,
+				E6E029A2205BA8FF00C93AE7 /* ShowTrackCollectionViewCell.swift in Sources */,
+				E60F965B205A45B700BC9BD2 /* AppDelegate.swift in Sources */,
+				E6E029A6205BA94300C93AE7 /* ShowTrackOfVideoCollectionViewCell.swift in Sources */,
+				E6E0299D205BA89A00C93AE7 /* ShowTrackViewController.swift in Sources */,
+				E60F9689205A4E0200BC9BD2 /* Constant.swift in Sources */,
+				E6F1C3B8205A575C00DFDD28 /* JsonModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60F9667205A45B800BC9BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60F9670205A45B800BC9BD2 /* FungJaiTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60F9672205A45B800BC9BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60F967B205A45B800BC9BD2 /* FungJaiTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E60F966D205A45B800BC9BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E60F9656205A45B700BC9BD2 /* FungJaiTest */;
+			targetProxy = E60F966C205A45B800BC9BD2 /* PBXContainerItemProxy */;
+		};
+		E60F9678205A45B800BC9BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E60F9656205A45B700BC9BD2 /* FungJaiTest */;
+			targetProxy = E60F9677205A45B800BC9BD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E60F965E205A45B800BC9BD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E60F965F205A45B800BC9BD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E60F9663205A45B800BC9BD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E60F9664205A45B800BC9BD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E60F967D205A45B800BC9BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E60F967E205A45B800BC9BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E60F9680205A45B800BC9BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B77E2AA612DD6558B4A8D7D /* Pods-FungJaiTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = FungJaiTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.FungJaiTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E60F9681205A45B800BC9BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48461846292BDB657CA8C8C6 /* Pods-FungJaiTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = FungJaiTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.FungJaiTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E60F9683205A45B800BC9BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = FungJaiTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.FungJaiTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FungJaiTest.app/FungJaiTest";
+			};
+			name = Debug;
+		};
+		E60F9684205A45B800BC9BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = FungJaiTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.FungJaiTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FungJaiTest.app/FungJaiTest";
+			};
+			name = Release;
+		};
+		E60F9686205A45B800BC9BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = FungJaiTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.FungJaiTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FungJaiTest;
+			};
+			name = Debug;
+		};
+		E60F9687205A45B800BC9BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JFV7KG542P;
+				INFOPLIST_FILE = FungJaiTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tirawat.com.FungJaiTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FungJaiTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E60F9652205A45B700BC9BD2 /* Build configuration list for PBXProject "FungJaiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60F967D205A45B800BC9BD2 /* Debug */,
+				E60F967E205A45B800BC9BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E60F967F205A45B800BC9BD2 /* Build configuration list for PBXNativeTarget "FungJaiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60F9680205A45B800BC9BD2 /* Debug */,
+				E60F9681205A45B800BC9BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E60F9682205A45B800BC9BD2 /* Build configuration list for PBXNativeTarget "FungJaiTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60F9683205A45B800BC9BD2 /* Debug */,
+				E60F9684205A45B800BC9BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E60F9685205A45B800BC9BD2 /* Build configuration list for PBXNativeTarget "FungJaiTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60F9686205A45B800BC9BD2 /* Debug */,
+				E60F9687205A45B800BC9BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E60F964F205A45B700BC9BD2 /* Project object */;
+}
